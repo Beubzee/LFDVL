@@ -20,4 +20,5 @@ def affiche_road_trip():
     return render_template('Affiche_road_trip.html')
 
 if __name__ == "__main__":
-    app.run(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
