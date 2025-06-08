@@ -1,68 +1,81 @@
+@media (orientation: portrait), screen and (max-aspect-ratio: 1/1) {
 
-/* CONFIGURATION EN FONCTION DU TYPE D'APPAREIL */
-@media (orientation: portrait), screen and (max-aspect-ratio: 1/1){ /* Les règles CSS spécifiées dedans priment sur les règles CSS générales (sur un appareil en portrait par exemple, le fond sera de la couleur précisée, bien que définie dans body{}. */
-/* Portrait */
-    .bord_r{
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 8px;
-    }
-
-    body{
-        margin-left: 0%;
-        margin-right: 0%;
-        margin-top:-2vh;
+    body {
         cursor: url(images/Van_side_cur.png), not-allowed;
         background-color: rgb(204, 156, 102);
         min-height: 100vh;
-        background-color: brown;
         flex-direction: column;
-        background-size:contain;
+        background-size: contain;
         background-repeat: no-repeat;
-        max-width: 100vw;
+        background-position: center;
+    }
+
+    .Titre,
+    h1,
+    p {
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     .bod2 {
-        display: flex;  
-        position: relative;   
-        min-height: 900px;
-        background-color: rgba(226, 206, 115, 0.64); /* rgba(R, G, B, opacité) */
-        z-index: 1;
+        display: flex;
         flex-direction: column;
+        position: relative;
+        min-height: 900px;
+        background-color: rgba(226, 206, 115, 0.92);
         margin-top: -15%;
+        z-index: 1;
     }
 
-    .Gauche{
-        order: 2;
-    }
-
-    .centre{
-        order: 1;
-    }
-
-    .Droite{
-        order: 3;
-    }
-
-    .Banderole{
-        top: 20px;
+    .Banderole {
         margin-left: 0%;
         background-image: url(images/Banderole.jpg);
         background-repeat: no-repeat;
         background-size: 100vw;
-        position:sticky;
-        min-height: 20px;
+        position: sticky;
+        top: 20px;
         width: 100%;
+        height: 30vh;
         z-index: 0;
     }
 
+    .Btn_accueil {
+        position: sticky;
+        top: 10px;
+        z-index: 2;
+        background-color: burlywood;
+        border-radius: 0;
+        cursor: pointer;
+        height: 10vw;
+        width: 10vw;
+        font-size: 2vw;
+    }
+
+    .image_centre {
+        cursor: pointer;
+    }
+
+    .desc,
+    .bord_r,
+    .Lien_res {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+    }
+
+    .desc {
+        justify-content: left;
+        font-size: initial;
+        color: black;
+        margin: 0;
+        outline: none;
+        text-decoration: none;
+    }
 
     .Lien_res {
         display: flex;
         align-items: center;
-        gap: 10px; 
+        gap: 10px;
         padding: 10px;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 8px;
     }
 
     .image_res {
@@ -77,50 +90,29 @@
         outline: none;
         text-decoration: none;
     }
-    
-    .image_centre{
-        cursor: pointer;
-    }
 
-    .Btn_accueil{
-        position:sticky;
-        top:10px;
-        z-index: 2;
-        background-color: burlywood;
-        border-radius: 0;
-        cursor: pointer;
-        height: 10vw;
-        width:  10vw;
-        font-size:2vw;
-    }
-
-    .Titre{
-        color: aqua;
-        text-align: center;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-
-    p{  
-        text-align  : center;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
-    }
-
-    .centre{
-        display : flex; /* Permet d'organiser tous les éléments dedans (par exemple, l'attribut flex-direction:column permet d'afficher tous les éléments (images / div etc) les uns sur les autres. */
+    .centre {
+        display: flex;
         flex-direction: column;
     }
 
-    .desc{
-        justify-content: left;
-        font-size:initial;
-        color:black;
-        margin: 0;
-        outline: none;
-        text-decoration: none;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 8px;
+    .Btm {
+        background-color: rgb(207, 240, 131);
+        width: 100%;
     }
 
+    .Gauche{
+        order: 2;
+    }
+
+    .centre{
+        order: 1;
+    }
+
+    .Droite{
+        order: 3;
+    }
+}
 
 @media (orientation: landscape), screen and (min-aspect-ratio: 1/1){
 /* Paysage */ 
@@ -169,14 +161,13 @@
     
     .Titre{
         font-size: large;
-        color: aqua;
         text-align: center;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     p{  
         text-align  : center;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     body{
@@ -265,3 +256,4 @@
         background-color: rgba(255, 255, 255, 0.1);
         border-radius: 8px;
     }
+}
