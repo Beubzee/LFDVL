@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+Bah alors ca fouille dans le site des gens ? 
+Site développé par @Bubzee__ sur instagram, si tu as une question viens en DM
+Tu risques de pas trouver grand chose tu sais, le site se limite vraiment à un fichier html
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/Accueil.CSS">
+    <link rel="icon" type="image/png" href="/static/images/logo_2.png"/>
+    <title>LFDVL - Site officiel</title> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+</head>
+<body>
+    <div class='Banderole'>
+        <div class="banner">
+            <h1 style='color:white;'>Bienvenue sur le site officiel des Fous du van Lent !!!</h1>
+        </div>
+    </div>
+    <br>
+    <div class = 'bod2'>
+        <div class = 'Gauche'>
+            <h1> Qui sommes nous ? </h1>
+            <p class= 'desc'>Salut à tous !
+
+                Nous, c’est Maxence et Lubin, deux meilleurs amis, musiciens, et un peu fous de liberté. <br> Cet été, on part en road trip à bord de notre van, au départ de Toulon !<br> Notre aventure suivra la frontière française, fera un petit détour en Espagne, puis remontera toute la côte Atlantique jusqu’à La Rochelle.<br><br>
+                
+                
+                Mais ce n’est pas juste un voyage :<br>
+                Nous emmenons nos instruments avec nous pour partager la musique partout où l’on passe.🎶<br><br>
+                
+                
+                On rêve de faire des concerts improvisés sur les places de village,<br> dans des maisons de retraite, des bars ou tout simplement dans la rue.<br>
+                Notre but est de créer du lien, faire des rencontres,<br> apporter de la joie et vivre un été inoubliable.<br><br>
+                
+                
+                On est tous les deux étudiants et pour nous,<br> ce voyage est une vraie bouffée d’air et une aventure humaine et artistique.<br><br>
+
+                Merci d’avance à tous ceux qui nous soutiennent,<br> même un petit mot ou un partage, ça compte beaucoup❤️
+            </p>
+        </div>
+        <div class = 'centre resp'>
+            <h1>
+                
+            </h1>
+            <img 
+            onclick="window.location.href = '/affiche_road_trip'"
+            class="image_centre" 
+            src='static/images/Affiche.png'
+            alt='Affiche de notre road trip' style="margin-top: 2vh;"></img>
+            <br>
+            <h1>Nos actualités : </h1>
+            <!-- LightWidget WIDGET -->
+            <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+            <iframe src="//lightwidget.com/widgets/870d0b5da89d504999761238dad6a91a.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+            <p>Site développé par @Bubzee__ sur instagram</p>
+        </div>
+        <div class = 'Droite'>
+            <h1> Nos réseaux : </h1>
+            <div class='Lien_res'>
+                <img class="image_res" src='static/images/insta.png'></img>
+                <a class='lien_res_in' href='https://www.instagram.com/lesfousduvanlent' target="_blank"> instagram </a>
+            </div>
+            <div class='Lien_res'>
+                <img class="image_res" src='static/images/tiktok.webp'></img>
+                <a class='lien_res_in' href='https://www.tiktok.com/@lesfousduvanlent' target="_blank"> Tiktok </a>
+            </div>
+            <div class='Lien_res'>
+                <img class="image_res" src='static/images/tirelire.png'></img>
+                <a class='lien_res_in' href='https://www.leetchi.com/fr/c/maxence-lubin-les-fous-du-van-lent-1490056' target="_blank"> Notre cagnotte </a>
+            </div>
+            <div class='Lien_res'>
+                <img class="image_res" src='static/images/youtube.png'></img>
+                <a class='lien_res_in' href='https://www.leetchi.com/fr/c/maxence-lubin-les-fous-du-van-lent-1490056' target="_blank"> Notre chaîne YouTube </a>
+            </div>
+        </div>
+    </div>
+
+<script> /* Ce script est une vérification de la hauteur, largeur de l'écran, ainsi que son orientation. C'est une sécurité qui sert pour le bon affichage du site. */
+window.addEventListener("load", function () { /* Cette ligne permet d'attendre le chargement complet du site avant de continuer sa propre éxécution */
+    setTimeout(function () {   /* Un timeout supplémentaire qui permet de s'assurer que tout soit bien chargé */
+        document.body.style.display = "none"; /* On cache le site à l'utilisateur */
+        document.body.offsetHeight; /* Cette ligne demande au navigateur de calcule sa hauteur, ce qui permet au navigateur d'effectuer un recalcul de ses dimensions avant affichage */
+        document.body.style.display = ""; /* On réaffiche le contenu de la page. */
+    }, 100);
+});
+</script>
+
+</body>
+</html>
