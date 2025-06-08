@@ -10,6 +10,10 @@
         background-position: center;
     }
 
+    h1{
+        font-size: large;
+    }
+
     .Titre,
     h1,
     p {
@@ -137,6 +141,10 @@
     .Gauche{
         width:25%;
         grid-area: gauche;
+    }
+
+    h1{
+        font-size: 5vh;
     }
 
     .bord_r{
