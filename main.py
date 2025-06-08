@@ -18,9 +18,9 @@ def affiche_road_trip():
     print('Requête page affiche')
     return render_template('Affiche_road_trip.html')
 
-if __name__ == '__main__':
-    print('Entrée dans la boucle.')
-    app.run(debug=True, host="0.0.0.0")
+#if __name__ == '__main__':
+#    print('Entrée dans la boucle.')
+#    app.run(debug=True, host="0.0.0.0")
 
 #app.run(host="0.0.0.0")
 #app.run(debug=True)
