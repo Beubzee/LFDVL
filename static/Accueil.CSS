@@ -143,8 +143,7 @@
     }
 
     .Gauche{
-        width:20vw;
-        max-width: 46vw;
+        width:25%;
         grid-area: gauche;
     }
 
@@ -154,16 +153,14 @@
     }
 
     .centre{
-        width:46vw;
-        max-width: 46vw;
+        width:60%;
         grid-area:centre;
         display : flex; /* Permet d'organiser tous les éléments dedans (par exemple, l'attribut flex-direction:column permet d'afficher tous les éléments (images / div etc) les uns sur les autres. */
         flex-direction: column;
     }
 
     .Droite{
-        width: 20vw;
-        max-width: 20vw;
+        width: 30%;
         grid-area: droite;
         position: sticky;
         top: 20px;
@@ -229,6 +226,7 @@
         min-height: 900px;
         background-color: rgba(226, 206, 115, 0.64); /* rgba(R, G, B, opacité) */
         z-index: 1;
+        width: 100%;
     }
 
     h1{
