@@ -9,10 +9,14 @@ print('App créée.')
 
 @app.route("/robots.txt")
 def robots():
+    print('---------------------------------------------------')
+    print(f'Requête robots.txt - {str(datetime.now())}')
     return send_from_directory("static", "robots.txt")
 
 @app.route("/sitemap.xml")
 def sitemap():
+    print('---------------------------------------------------')
+    print(f'Requête sitemap.xml - {str(datetime.now())}')
     return send_from_directory("static", "sitemap.xml")
 
 @app.route('/')
