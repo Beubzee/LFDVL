@@ -7,6 +7,14 @@ print('Lancement...')
 app = Flask(__name__)
 print('App créée.')
 
+@app.route("/robots.txt")
+def robots():
+    return send_from_directory("static", "robots.txt")
+
+@app.route("/sitemap.xml")
+def sitemap():
+    return send_from_directory("static", "sitemap.xml")
+
 @app.route('/')
 def accueil():
     print('---------------------------------------------------')
