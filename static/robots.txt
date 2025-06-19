@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://les-fous-du-van-lent.onrender.com/sitemap.xml
