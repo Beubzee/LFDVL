@@ -11,7 +11,7 @@ Tu risques de pas trouver grand chose tu sais, le site se limite vraiment à un 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="Bienvenue sur le site du projet le plus fou de notre vie ! ">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Bubzee__">
@@ -26,10 +26,7 @@ Tu risques de pas trouver grand chose tu sais, le site se limite vraiment à un 
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-2XRXXWN05X');
-    </script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    
+    </script>    
 </head>
 <body>
     <div class='Banderole'>
@@ -39,9 +36,14 @@ Tu risques de pas trouver grand chose tu sais, le site se limite vraiment à un 
     </div>
     <br>
     <div class = 'bod2'>
+
+
+
         <div class = 'Gauche'>
             <h1> Qui sommes nous ? </h1>
-            <p class= 'desc'>Salut à tous !
+            <p class= 'desc'>
+                <br>
+                Salut à tous !
 
                 Nous, c’est Maxence et Lubin, deux meilleurs amis, musiciens, et un peu fous de liberté. <br> Cet été, on part en road trip à bord de notre van, au départ de Toulon !<br> Notre aventure suivra la frontière française, fera un petit détour en Espagne, puis remontera toute la côte Atlantique jusqu’à La Rochelle.<br><br>
                 
@@ -57,8 +59,64 @@ Tu risques de pas trouver grand chose tu sais, le site se limite vraiment à un 
                 On est tous les deux étudiants et pour nous,<br> ce voyage est une vraie bouffée d’air et une aventure humaine et artistique.<br><br>
 
                 Merci d’avance à tous ceux qui nous soutiennent,<br> même un petit mot ou un partage, ça compte beaucoup❤️
+                <br><br>
             </p>
+
+            <h1>Nos musiques : </h1>
+            <div class='form_sons desc'>        
+                <!-- Début formulaire Head to the road -->      
+                <div class='Lecteur'> 
+                    <h3 class='Titre_son'> Head To The Road </h3>
+                    <div class='Options'>
+                        <audio id='HeadOnTheRoad' src="/static/music/HEAD TO THE ROAD - Les Fous Du Van Lent.mp3"></audio>
+                        <img src="static/images/play_btn.png"
+                            class="bouton-son"
+                            onclick="document.getElementById('HeadOnTheRoad').play()">
+
+                        <img src="static/images/pause_btn.png" 
+                            class="bouton-son" 
+                            onclick="document.getElementById('HeadOnTheRoad').pause()">
+                        
+                        <form id="formSon" action="" method="POST">
+                            <input type="hidden" name="son" id="sonInput">
+
+                            <img src="static/images/download_btn.png" 
+                                alt="Play" 
+                                class="bouton-son bouton-telechargement"
+                                onclick="document.getElementById('sonInput').value = 'HEAD TO THE ROAD'; document.getElementById('formSon').submit();">
+                        </form>
+                    </div>
+                    <br>
+                </div>
+                <!-- Fin formulaire Head to the road -->
+                <!-- Début formulaire Head to the road -->      
+                <div class='Lecteur'> 
+                    <h3 class='Titre_son'> Wakey Wakey </h3>
+                    <div class='Options'>
+                        <audio id='Wakey Wakey' src="/static/music/Wakey Wakey - Les Fous Du Van Lent.mp3"></audio>
+                        <img src="static/images/play_btn.png"
+                            class="bouton-son"
+                            onclick="document.getElementById('Wakey Wakey').play()">
+
+                        <img src="static/images/pause_btn.png"
+                            class="bouton-son"
+                            onclick="document.getElementById('Wakey Wakey').pause()">
+
+                        <form id="formSon" action="" method="POST">
+                        <input type="hidden" name="son" id="sonInput">
+                        <img src="static/images/download_btn.png"
+                            class="bouton-son bouton-telechargement"
+                            alt="Télécharger"
+                            onclick="document.getElementById('sonInput').value = 'Wakey Wakey'; document.getElementById('formSon').submit();">
+                        </form>
+                    </div>
+                    <br>
+                </div>
+                <!-- Fin formulaire Head to the road -->
+                <br>
+            </div>            
         </div>
+
         <div class = 'centre resp'>
             <h1>
                 
@@ -75,6 +133,9 @@ Tu risques de pas trouver grand chose tu sais, le site se limite vraiment à un 
             <iframe src="https://cdn.lightwidget.com/widgets/870d0b5da89d504999761238dad6a91a.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
             <p>Site développé par @Bubzee__ sur instagram</p>
         </div>
+
+
+
         <div class = 'Droite'>
             <h1> Nos réseaux : </h1>
             <div class='Lien_res'>
@@ -96,19 +157,27 @@ Tu risques de pas trouver grand chose tu sais, le site se limite vraiment à un 
             <br>
             <h1> Un grand Merci !!!</h1>
             <p class= 'desc'>
-                Merci à Bubzee__,Jade B, Antoine B, Arthur C, Corentin C et Guillaume C pour leur aide !!!
+                <br>
+                Merci à Bubzee__,Jade B, Antoine B, Arthur C, Damien.G, Corentin C et Guillaume C pour leur aide !!!
                 <br><br>
-                Bubzee__ pour ce superbe site
+                <b>Bubzee__</b> pour ce superbe site,
                 <br>
-                Jade B pour la DA 
+                <b>Jade B</b> pour la DA ,
                 <br>
-                Antoine B pour notre hymne incroyable
+                <b>Antoine B</b> pour notre hymne incroyable,
                 <br>
-                Arthur C, ce superbe compositeur, source de nos morceaux
+                <b>Arthur C</b>, ce superbe compositeur, source de nos morceaux,
                 <br>
-                Sans oublier Corentin C et Guillaume C pour leur forte contribution sur la cagnotte !
+                <b>Damien.G</b> pour sa box délice,
+                <br>
+                Sans oublier <b>Corentin C</b> et <b>Guillaume C</b> pour leur forte contribution sur la cagnotte !
+                <br><br>
             </p>
         </div>
+
+
+
+
     </div>
 
 <script> /* Ce script est une vérification de la hauteur, largeur de l'écran, ainsi que son orientation. C'est une sécurité qui sert pour le bon affichage du site. */
