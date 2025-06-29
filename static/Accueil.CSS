@@ -1,5 +1,54 @@
-@media (orientation: portrait), screen and (max-aspect-ratio: 1/1) {
+.Lecteur{
+    background-color: rgb(204, 156, 102, 0.5);
+    width: 100%;
+}
 
+h3{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.Options{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (orientation: portrait), screen and (max-aspect-ratio: 1/1) {
+    .form_sons {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .Lecteur {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Options {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .bouton-son {
+        width: 30%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .bouton-telechargement {
+        width: 90%;
+    }
+    
     body {
         cursor: url(images/Van_side_cur.png), not-allowed;
         background-color: rgb(204, 156, 102);
@@ -11,7 +60,7 @@
     }
 
     h1{
-        font-size: large;
+        font-size: 7vw;
     }
 
     .Titre,
@@ -19,6 +68,10 @@
     p {
         text-align: center;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    body{
+        font-size: 5vw;
     }
 
     .bod2 {
@@ -44,15 +97,18 @@
     }
 
     .Btn_accueil {
-        position: sticky;
-        top: 10px;
-        z-index: 2;
-        background-color: burlywood;
-        border-radius: 0;
+        background-color: #e7ba3c;
+        border-radius: 10px;
+        color: #000000;
+        text-align: center;
+        font-size: 100%;
+        width: fit-content;
+        padding: 3%;
         cursor: pointer;
-        height: 10vw;
-        width: 10vw;
-        font-size: 2vw;
+        margin: 5px;
+        position: fixed;
+        top: 2vh;
+        left: 2vw;
     }
 
     .image_centre {
@@ -68,7 +124,6 @@
 
     .desc {
         justify-content: left;
-        font-size: initial;
         color: black;
         margin: 0;
         outline: none;
@@ -83,12 +138,11 @@
     }
 
     .image_res {
-        width: 30px;
+        width: 7vw;
         height: auto;
     }
 
     .lien_res_in {
-        font-size: xx-large;
         margin: 0;
         color: black;
         outline: none;
@@ -120,6 +174,16 @@
 
 @media (orientation: landscape), screen and (min-aspect-ratio: 1/1){
 /* Paysage */ 
+    .bouton-son {
+        width: 30%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .bouton-telechargement {
+        width: 90%; 
+    }
+
     .Banner{
     background-image: url(images/banner.jpg);
     }
@@ -128,10 +192,21 @@
         cursor: pointer;
     }
 
-    .Btn_accueil{
-        height: 10vh;
-        width:  10vw;
-        font-size:2vw;
+    .Btn_accueil {
+        background-color: #e7ba3c;
+        border-radius: 10px;
+        color: #000000;
+        text-align: center;
+        font-size: 100%;
+        width: fit-content;
+        height: auto;
+        padding: 3%;
+        cursor: pointer;
+        margin: 5px;
+        position: fixed;
+        top: 2vh;
+        left: 2vw;
+        z-index: 2;
     }
 
     .page_affiche{
@@ -200,8 +275,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: top center;
-        background-attachment: scroll;
-        font-size: initial;     
+        background-attachment: scroll;     
         position:sticky;
         min-height:150%;
         width: 100vw;
@@ -242,12 +316,12 @@
     }
 
     .image_res {
-        width: 30px;
+        width: 1.5vw;
         height: auto;
     }
 
     .lien_res_in {
-        font-size: larger;
+        font-size: 1.5vw;
         margin: 0;
         color: black;
         outline: none;
@@ -256,12 +330,20 @@
 
     .desc{
         justify-content: left;
-        font-size:initial;
+        font-size:1vw;
         color:black;
         margin: 0;
         outline: none;
         text-decoration: none;
         background-color: rgba(255, 255, 255, 0.1);
         border-radius: 8px;
+    }
+
+    h3{
+        font-size: 2vw;
+    }
+
+    p{
+        font-size: 1.5vw;
     }
 }
