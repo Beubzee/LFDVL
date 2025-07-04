@@ -28,11 +28,14 @@ def accueil():
         son_dl = donnee.get('son')
         print(f'Formulaire entrant : {donnee}')
         if son_dl == 'HEAD TO THE ROAD':
-            print('Métode POST -- téléchargment HEAD TO THE ROAD')
+            print('Méthode POST -- téléchargment HEAD TO THE ROAD')
             return send_from_directory('static/music', 'HEAD TO THE ROAD - Les Fous Du Van Lent.mp3', as_attachment=True)
         elif son_dl == 'Wakey Wakey':
-            print('Métode POST -- téléchargment Wakey Wakey')
+            print('Méthode POST -- téléchargment Wakey Wakey')
             return send_from_directory('static/music', 'Wakey Wakey - Les Fous Du Van Lent.mp3', as_attachment=True)
+        elif son_dl == 'KIWI T MORT':
+            print('Méthode POST -- téléchargement KIWI T MORT')
+            return send_from_directory('static/music', 'KIWI T MORT - Les Fous Du Van Lent.mp3', as_attachment=True)
     return render_template('Accueil.html')
 
 @app.route('/affiche_road_trip')
