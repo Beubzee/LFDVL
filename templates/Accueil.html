@@ -107,15 +107,39 @@ Tu risques de pas trouver grand chose tu sais, le site se limite vraiment à un 
 
                         <form id="formSon" action="" method="POST">
                         <input type="hidden" name="son" id="sonInput">
-                        <img src="static/images/download_btn.png"
-                            class="bouton-son bouton-telechargement"
-                            alt="Télécharger"
-                            onclick="document.getElementById('sonInput').value = 'Wakey Wakey'; document.getElementById('formSon').submit();">
+                            <img src="static/images/download_btn.png"
+                                class="bouton-son bouton-telechargement"
+                                alt="Télécharger"
+                                onclick="document.getElementById('sonInput').value = 'Wakey Wakey'; document.getElementById('formSon').submit();">
                         </form>
                     </div>
                     <br>
                 </div>
                 <!-- Fin formulaire Head to the road -->
+                <!-- Début formulaire KIWI T MORT -->
+                <div class='Lecteur'> 
+                    <h3 class='Titre_son'> KIWI T MORT </h3>
+                    <div class='Options'>
+                        <audio id='KIWI T MORT' src="/static/music/KIWI T MORT - Les Fous Du Van Lent.mp3"></audio>
+                        <img src="static/images/play_btn.png"
+                            class="bouton-son"
+                            onclick="document.getElementById('KIWI T MORT').play()">
+
+                        <img src="static/images/pause_btn.png"
+                            class="bouton-son"
+                            onclick="document.getElementById('KIWI T MORT').pause()">
+
+                        <form id="formSon" action="" method="POST">
+                        <input type="hidden" name="son" id="sonInput">
+                            <img src="static/images/download_btn.png"
+                                class="bouton-son bouton-telechargement"
+                                alt="Télécharger"
+                                onclick="document.getElementById('sonInput').value = 'KIWI T MORT'; document.getElementById('formSon').submit();">
+                        </form>
+                    </div>
+                    <br>
+                </div>
+                <!-- Fin formulaire KIWI T MORT -->
                 <br>
             </div>            
         </div>
