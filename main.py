@@ -10,19 +10,19 @@ print('App créée.')
 @app.route("/robots.txt")
 def robots():
     print('\n---------------------------------------------------')
-    print(f'Requête robots.txt - {str(datetime.now())}')
+    print(f'Requête robots.txt - {str(datetime.now())[:-7]}')
     return send_from_directory("static", "robots.txt")
 
 @app.route("/sitemap.xml")
 def sitemap():
     print('\n---------------------------------------------------')
-    print(f'Requête sitemap.xml - {str(datetime.now())}')
+    print(f'Requête sitemap.xml - {str(datetime.now())[:-7]}')
     return send_from_directory("static", "sitemap.xml")
 
 @app.route('/', methods=['GET', 'POST'])
 def accueil():
     print('\n---------------------------------------------------')
-    print(f'Requête page accueil - {str(datetime.now())}')
+    print(f'Requête page accueil - {str(datetime.now())[:-7]}')
     if request.method == 'POST':
         donnee = request.form
         son_dl = donnee.get('son')
@@ -41,7 +41,7 @@ def accueil():
 @app.route('/affiche_road_trip')
 def affiche_road_trip():
     print('\n---------------------------------------------------')
-    print(f'Requête page affiche - {str(datetime.now())}')
+    print(f'Requête page affiche - {str(datetime.now())[:-7]}')
     return render_template('Affiche_road_trip.html')
 
 if __name__ == "__main__":
